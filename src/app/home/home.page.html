@@ -1,0 +1,59 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <div id="container">
+    <!-- <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer"
+        href="https://ionicframework.com/docs/components">UI Components</a></p> -->
+    <ion-card>
+      <img
+        src="https://lh3.googleusercontent.com/proxy/pE6lVvahD1e0_hheO0l8YCZ7lUJUibTogflidN4TGIPY-PVYKTNPmduqMEmSg0Q8Y4ef7CR5DP_hL8m3V3D9Y6mb8bIvN0ww5ylTJpWvXAeCbFvi1-zsqgw9SfEPt0Jlf91DPvo0k4K4tp09VGZzvLp3Ym1VDXe0qL1GrtmTzDeaeUkfgci9"
+      />
+      <ion-card-header>
+        <ion-card-title>Yuk bantu teman tuli berkomunikasi!</ion-card-title>
+      </ion-card-header>
+      <ion-button shape="round">Aktifkan Kamera</ion-button>
+    </ion-card>
+
+    <ion-button (click)="getPermissions()">
+      Permission
+    </ion-button>
+    <ion-button
+      (click)="startListening()"
+      [color]="isRecording ? 'danger' : 'primary'"
+    >
+      Listening
+    </ion-button>
+    <ion-button (click)="stopListening()">
+      End
+    </ion-button>
+
+    <ion-card>
+      <ion-card-header>
+        This is what i understood...
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let match of matches">
+            {{ match }}
+          </ion-item>
+          <ion-item>
+            {{ coba }}
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
